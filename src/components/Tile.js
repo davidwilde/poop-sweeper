@@ -16,7 +16,7 @@ export default class Tile extends React.Component {
      * @param {object} newProps The new props being sent to the component for rendering
      */
     shouldComponentUpdate(newProps) {
-        return true
+        return newProps.tile !== this.props.tile;
     }
 
     /**
